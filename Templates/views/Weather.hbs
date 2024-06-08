@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/Index.css"> 
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="Weather_Image">
+            <img src="https://media.tenor.com/zMkmKxA3PRwAAAAj/cloudy-raining.gif" alt="">
+        </div>
+        <div class="Stats">
+            <p id="City_Name">{{data.name}}</p>
+            <p id="City_Temperature"> {{data.main.temp}} &degC</p>
+            <p id="City_Weather"> {{data.weather.[0].main}} </p>
+
+            <div class="Min_Max_Temp">
+                <p id="Min_temp"> Min Temp: {{data.main.temp_min}} &degC</p>
+                <p id="Max_temp"> Max Temp: {{data.main.temp_max}} &degC</p>
+            </div>
+            <input type="text" placeholder="Place Name" name="City" id="City">
+        </div>
+    </div> 
+</body>
+
+</html>
