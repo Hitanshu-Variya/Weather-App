@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 }); 
 
 function CallExternalAPI() {
-    let URL = `https://api.openweathermap.org/data/2.5/weather?q=Surat&appid=d9605fab0676140197689aa9ff9523f2`;
+    let URL = `https://api.openweathermap.org/data/2.5/weather?q=Surat&appid={Your API KEY}`;
     fetch(URL)
     .then((API_response) => {
         return API_response.json()  
